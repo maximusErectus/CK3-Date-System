@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
  DS_DATE_INSERT_YEAR_STR: "[GetScriptedGui('get_display_year').ExecuteTooltip( GuiScope.AddScope('year', MakeScopeValue('(CFixedPoint)$YEAR$') ).End )]"
  DS_DATE_INSERT_ERA_STR: "[GetScriptedGui('get_display_era').ExecuteTooltip( GuiScope.AddScope('year', MakeScopeValue('(CFixedPoint)$YEAR$') ).End )]"
@@ -33,11 +33,11 @@ l_english:
  ### Replacements in GUI files 
  ## gui/frontend_bookmarks.gui
  # Default: [GameSetup.GetSelectedDate.GetStringLong]
- frontend_bookmarks_date_replace:0 "frontend_bookmarks_date_replace" 
+ frontend_bookmarks_date_replace:0 "GameSetup.GetSelectedDate.GetStringLong" 
  # Default: [BookmarkItem.GetYear]
- frontend_bookmarks_bmI_date_replace:0 "frontend_bookmarks_bmI_date_replace"
+ frontend_bookmarks_bmI_date_replace:0 "BookmarkItem.GetYear"
  ## gui/frontend_mp_game_setup.gui
  # Default: [MpBookmarkItem.GetDate.GetStringLong]
- frontend_mp_game_setup_date_replace:0 "frontend_mp_game_setup_date_replace"
+ frontend_mp_game_setup_date_replace:0 "MpBookmarkItem.GetDate.GetStringLong"
  # Default: [GameMpSetup.GetSelectedBookmark.GetDate.GetString]
- frontend_mp_game_setup_bookmark_date_replace:0 "frontend_mp_game_setup_bookmark_date_replace"
+ frontend_mp_game_setup_bookmark_date_replace:0 "GameMpSetup.GetSelectedBookmark.GetDate.GetString"
