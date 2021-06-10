@@ -1,0 +1,4 @@
+﻿l_english:
+#TODO: Formatting
+ DS_DATE_INSERT_YEAR_STR: "[GetScriptedGui('get_display_year').ExecuteTooltip( GuiScope.AddScope('year', MakeScopeValue('(CFixedPoint)$YEAR$') ).End )]"
+ DS_DATE_INSERT_ERA_STR: "[GetScriptedGui('get_display_era').ExecuteTooltip( GuiScope.AddScope('year', MakeScopeValue('(CFixedPoint)$YEAR$') ).End )]"
