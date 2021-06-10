@@ -6,3 +6,102 @@
 	third = DS_LOC_DISPLAY_YEAR
 	global = DS_LOC_DISPLAY_YEAR
 }
+
+ds_display_era_1_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_1
+	third_past = DS_LOC_DISPLAY_ERA_1
+	global_past = DS_LOC_DISPLAY_ERA_1
+	first = DS_LOC_DISPLAY_ERA_1
+	third = DS_LOC_DISPLAY_ERA_1
+	global = DS_LOC_DISPLAY_ERA_1
+}
+
+ds_display_era_2_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_2
+	third_past = DS_LOC_DISPLAY_ERA_2
+	global_past = DS_LOC_DISPLAY_ERA_2
+	first = DS_LOC_DISPLAY_ERA_2
+	third = DS_LOC_DISPLAY_ERA_2
+	global = DS_LOC_DISPLAY_ERA_2
+}
+
+ds_display_era_3_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_3
+	third_past = DS_LOC_DISPLAY_ERA_3
+	global_past = DS_LOC_DISPLAY_ERA_3
+	first = DS_LOC_DISPLAY_ERA_3
+	third = DS_LOC_DISPLAY_ERA_3
+	global = DS_LOC_DISPLAY_ERA_3
+}
+
+ds_display_era_4_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_4
+	third_past = DS_LOC_DISPLAY_ERA_4
+	global_past = DS_LOC_DISPLAY_ERA_4
+	first = DS_LOC_DISPLAY_ERA_4
+	third = DS_LOC_DISPLAY_ERA_4
+	global = DS_LOC_DISPLAY_ERA_4
+}
+
+ds_display_era_5_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_5
+	third_past = DS_LOC_DISPLAY_ERA_5
+	global_past = DS_LOC_DISPLAY_ERA_5
+	first = DS_LOC_DISPLAY_ERA_5
+	third = DS_LOC_DISPLAY_ERA_5
+	global = DS_LOC_DISPLAY_ERA_5
+}
+
+ds_display_era_6_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_6
+	third_past = DS_LOC_DISPLAY_ERA_6
+	global_past = DS_LOC_DISPLAY_ERA_6
+	first = DS_LOC_DISPLAY_ERA_6
+	third = DS_LOC_DISPLAY_ERA_6
+	global = DS_LOC_DISPLAY_ERA_6
+}
+
+ds_display_era_7_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_7
+	third_past = DS_LOC_DISPLAY_ERA_7
+	global_past = DS_LOC_DISPLAY_ERA_7
+	first = DS_LOC_DISPLAY_ERA_7
+	third = DS_LOC_DISPLAY_ERA_7
+	global = DS_LOC_DISPLAY_ERA_7
+}
+
+ds_display_era_8_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_8
+	third_past = DS_LOC_DISPLAY_ERA_8
+	global_past = DS_LOC_DISPLAY_ERA_8
+	first = DS_LOC_DISPLAY_ERA_8
+	third = DS_LOC_DISPLAY_ERA_8
+	global = DS_LOC_DISPLAY_ERA_8
+}
+
+ds_display_era_9_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_9
+	third_past = DS_LOC_DISPLAY_ERA_9
+	global_past = DS_LOC_DISPLAY_ERA_9
+	first = DS_LOC_DISPLAY_ERA_9
+	third = DS_LOC_DISPLAY_ERA_9
+	global = DS_LOC_DISPLAY_ERA_9
+}
+
+ds_display_era_10_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_10
+	third_past = DS_LOC_DISPLAY_ERA_10
+	global_past = DS_LOC_DISPLAY_ERA_10
+	first = DS_LOC_DISPLAY_ERA_10
+	third = DS_LOC_DISPLAY_ERA_10
+	global = DS_LOC_DISPLAY_ERA_10
+}
+
+ds_display_era_fallback_effect_loc = {
+	first_past = DS_LOC_DISPLAY_ERA_FALLBACK
+	third_past = DS_LOC_DISPLAY_ERA_FALLBACK
+	global_past = DS_LOC_DISPLAY_ERA_FALLBACK
+	first = DS_LOC_DISPLAY_ERA_FALLBACK
+	third = DS_LOC_DISPLAY_ERA_FALLBACK
+	global = DS_LOC_DISPLAY_ERA_FALLBACK
+}

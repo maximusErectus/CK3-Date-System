@@ -1,7 +1,7 @@
-﻿l_english:
+l_english:
 
  DS_DATE_INSERT_YEAR_STR: "[GetScriptedGui('get_display_year').ExecuteTooltip( GuiScope.AddScope('year', MakeScopeValue('(CFixedPoint)$YEAR$') ).End )]"
- DS_DATE_INSERT_ERA_STR: "W.I.P"
+ DS_DATE_INSERT_ERA_STR: "[GetScriptedGui('get_display_era').ExecuteTooltip( GuiScope.AddScope('year', MakeScopeValue('(CFixedPoint)$YEAR$') ).End )]"
 
  ### DATE_STRING replacements
  GAME_DATE_STRING: "$MONTH$ $DAY|O$, ; $DS_DATE_INSERT_YEAR_STR$ ; $DS_DATE_INSERT_ERA_STR$ ; $YEAR$"
@@ -12,6 +12,11 @@
  
  #
  DS_LOC_DISPLAY_YEAR: "$VALUE|0$"
+ DS_LOC_DISPLAY_ERA_1: "E1"
+ DS_LOC_DISPLAY_ERA_2: "E2"
+ DS_LOC_DISPLAY_ERA_3: "E3"
+ DS_LOC_DISPLAY_ERA_4: "E4"
+ DS_LOC_DISPLAY_ERA_FALLBACK: "FB"
  
  
  ### Text replacements in main menu
