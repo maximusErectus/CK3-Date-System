@@ -8,84 +8,84 @@
 }
 
 ds_display_era_1_effect_loc = {
-	first_past = DS_LOC_DISPLAY_ERA_1
-	third_past = DS_LOC_DISPLAY_ERA_1
-	global_past = DS_LOC_DISPLAY_ERA_1
-	first = DS_LOC_DISPLAY_ERA_1
-	third = DS_LOC_DISPLAY_ERA_1
-	global = DS_LOC_DISPLAY_ERA_1
+	first_past = DS_LOC_DISPLAY_ERA_01
+	third_past = DS_LOC_DISPLAY_ERA_01
+	global_past = DS_LOC_DISPLAY_ERA_01
+	first = DS_LOC_DISPLAY_ERA_01
+	third = DS_LOC_DISPLAY_ERA_01
+	global = DS_LOC_DISPLAY_ERA_01
 }
 
 ds_display_era_2_effect_loc = {
-	first_past = DS_LOC_DISPLAY_ERA_2
-	third_past = DS_LOC_DISPLAY_ERA_2
-	global_past = DS_LOC_DISPLAY_ERA_2
-	first = DS_LOC_DISPLAY_ERA_2
-	third = DS_LOC_DISPLAY_ERA_2
-	global = DS_LOC_DISPLAY_ERA_2
+	first_past = DS_LOC_DISPLAY_ERA_02
+	third_past = DS_LOC_DISPLAY_ERA_02
+	global_past = DS_LOC_DISPLAY_ERA_02
+	first = DS_LOC_DISPLAY_ERA_02
+	third = DS_LOC_DISPLAY_ERA_02
+	global = DS_LOC_DISPLAY_ERA_02
 }
 
 ds_display_era_3_effect_loc = {
-	first_past = DS_LOC_DISPLAY_ERA_3
-	third_past = DS_LOC_DISPLAY_ERA_3
-	global_past = DS_LOC_DISPLAY_ERA_3
-	first = DS_LOC_DISPLAY_ERA_3
-	third = DS_LOC_DISPLAY_ERA_3
-	global = DS_LOC_DISPLAY_ERA_3
+	first_past = DS_LOC_DISPLAY_ERA_03
+	third_past = DS_LOC_DISPLAY_ERA_03
+	global_past = DS_LOC_DISPLAY_ERA_03
+	first = DS_LOC_DISPLAY_ERA_03
+	third = DS_LOC_DISPLAY_ERA_03
+	global = DS_LOC_DISPLAY_ERA_03
 }
 
 ds_display_era_4_effect_loc = {
-	first_past = DS_LOC_DISPLAY_ERA_4
-	third_past = DS_LOC_DISPLAY_ERA_4
-	global_past = DS_LOC_DISPLAY_ERA_4
-	first = DS_LOC_DISPLAY_ERA_4
-	third = DS_LOC_DISPLAY_ERA_4
-	global = DS_LOC_DISPLAY_ERA_4
+	first_past = DS_LOC_DISPLAY_ERA_04
+	third_past = DS_LOC_DISPLAY_ERA_04
+	global_past = DS_LOC_DISPLAY_ERA_04
+	first = DS_LOC_DISPLAY_ERA_04
+	third = DS_LOC_DISPLAY_ERA_04
+	global = DS_LOC_DISPLAY_ERA_04
 }
 
 ds_display_era_5_effect_loc = {
-	first_past = DS_LOC_DISPLAY_ERA_5
-	third_past = DS_LOC_DISPLAY_ERA_5
-	global_past = DS_LOC_DISPLAY_ERA_5
-	first = DS_LOC_DISPLAY_ERA_5
-	third = DS_LOC_DISPLAY_ERA_5
-	global = DS_LOC_DISPLAY_ERA_5
+	first_past = DS_LOC_DISPLAY_ERA_05
+	third_past = DS_LOC_DISPLAY_ERA_05
+	global_past = DS_LOC_DISPLAY_ERA_05
+	first = DS_LOC_DISPLAY_ERA_05
+	third = DS_LOC_DISPLAY_ERA_05
+	global = DS_LOC_DISPLAY_ERA_05
 }
 
 ds_display_era_6_effect_loc = {
-	first_past = DS_LOC_DISPLAY_ERA_6
-	third_past = DS_LOC_DISPLAY_ERA_6
-	global_past = DS_LOC_DISPLAY_ERA_6
-	first = DS_LOC_DISPLAY_ERA_6
-	third = DS_LOC_DISPLAY_ERA_6
-	global = DS_LOC_DISPLAY_ERA_6
+	first_past = DS_LOC_DISPLAY_ERA_06
+	third_past = DS_LOC_DISPLAY_ERA_06
+	global_past = DS_LOC_DISPLAY_ERA_06
+	first = DS_LOC_DISPLAY_ERA_06
+	third = DS_LOC_DISPLAY_ERA_06
+	global = DS_LOC_DISPLAY_ERA_06
 }
 
 ds_display_era_7_effect_loc = {
-	first_past = DS_LOC_DISPLAY_ERA_7
-	third_past = DS_LOC_DISPLAY_ERA_7
-	global_past = DS_LOC_DISPLAY_ERA_7
-	first = DS_LOC_DISPLAY_ERA_7
-	third = DS_LOC_DISPLAY_ERA_7
-	global = DS_LOC_DISPLAY_ERA_7
+	first_past = DS_LOC_DISPLAY_ERA_07
+	third_past = DS_LOC_DISPLAY_ERA_07
+	global_past = DS_LOC_DISPLAY_ERA_07
+	first = DS_LOC_DISPLAY_ERA_07
+	third = DS_LOC_DISPLAY_ERA_07
+	global = DS_LOC_DISPLAY_ERA_07
 }
 
 ds_display_era_8_effect_loc = {
-	first_past = DS_LOC_DISPLAY_ERA_8
-	third_past = DS_LOC_DISPLAY_ERA_8
-	global_past = DS_LOC_DISPLAY_ERA_8
-	first = DS_LOC_DISPLAY_ERA_8
-	third = DS_LOC_DISPLAY_ERA_8
-	global = DS_LOC_DISPLAY_ERA_8
+	first_past = DS_LOC_DISPLAY_ERA_08
+	third_past = DS_LOC_DISPLAY_ERA_08
+	global_past = DS_LOC_DISPLAY_ERA_08
+	first = DS_LOC_DISPLAY_ERA_08
+	third = DS_LOC_DISPLAY_ERA_08
+	global = DS_LOC_DISPLAY_ERA_08
 }
 
 ds_display_era_9_effect_loc = {
-	first_past = DS_LOC_DISPLAY_ERA_9
-	third_past = DS_LOC_DISPLAY_ERA_9
-	global_past = DS_LOC_DISPLAY_ERA_9
-	first = DS_LOC_DISPLAY_ERA_9
-	third = DS_LOC_DISPLAY_ERA_9
-	global = DS_LOC_DISPLAY_ERA_9
+	first_past = DS_LOC_DISPLAY_ERA_09
+	third_past = DS_LOC_DISPLAY_ERA_09
+	global_past = DS_LOC_DISPLAY_ERA_09
+	first = DS_LOC_DISPLAY_ERA_09
+	third = DS_LOC_DISPLAY_ERA_09
+	global = DS_LOC_DISPLAY_ERA_09
 }
 
 ds_display_era_10_effect_loc = {

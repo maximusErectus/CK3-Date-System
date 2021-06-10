@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
  DS_DATE_INSERT_YEAR_STR: "[GetScriptedGui('get_display_year').ExecuteTooltip( GuiScope.AddScope('year', MakeScopeValue('(CFixedPoint)$YEAR$') ).End )]"
  DS_DATE_INSERT_ERA_STR: "[GetScriptedGui('get_display_era').ExecuteTooltip( GuiScope.AddScope('year', MakeScopeValue('(CFixedPoint)$YEAR$') ).End )]"
@@ -12,10 +12,10 @@
  
  #
  DS_LOC_DISPLAY_YEAR: "$VALUE|0$"
- DS_LOC_DISPLAY_ERA_1: "E1"
- DS_LOC_DISPLAY_ERA_2: "E2"
- DS_LOC_DISPLAY_ERA_3: "E3"
- DS_LOC_DISPLAY_ERA_4: "E4"
+ DS_LOC_DISPLAY_ERA_01: "E1"
+ DS_LOC_DISPLAY_ERA_02: "E2"
+ DS_LOC_DISPLAY_ERA_03: "E3"
+ DS_LOC_DISPLAY_ERA_04: "E4"
  DS_LOC_DISPLAY_ERA_FALLBACK: "FB"
  
  
