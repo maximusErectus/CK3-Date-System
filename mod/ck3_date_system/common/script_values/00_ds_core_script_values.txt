@@ -208,7 +208,7 @@ ds_display_year = {
 	if = {
 		limit = {
 			scope:year >= era_10_start
-			era_10_enabled = 1
+			is_era_valid = { ERA = 10 }
 		}	
 		subtract = era_10_start
 	}
@@ -216,7 +216,7 @@ ds_display_year = {
 	else_if = {
 		limit = {
 			scope:year >= era_9_start
-			era_9_enabled = 1
+			is_era_valid = { ERA = 9 }
 		}		
 		if = {
 			limit = {
@@ -228,7 +228,7 @@ ds_display_year = {
 						global_var:ds_era_10_start > scope:year
 					}
 				}
-				era_10_enabled = 1
+				is_era_valid = { ERA = 10 }
 			}
 			subtract = era_10_start
 			multiply = -1
@@ -241,7 +241,7 @@ ds_display_year = {
 	else_if = {
 		limit = {
 			scope:year >= era_8_start
-			era_8_enabled = 1
+			is_era_valid = { ERA = 8 }
 		}		
 		if = {
 			limit = {
@@ -253,7 +253,7 @@ ds_display_year = {
 						global_var:ds_era_9_start > scope:year
 					}
 				}
-				era_9_enabled = 1
+				is_era_valid = { ERA = 9 }
 			}
 			subtract = era_9_start
 			multiply = -1
@@ -266,7 +266,7 @@ ds_display_year = {
 	else_if = {
 		limit = {
 			scope:year >= era_7_start
-			era_7_enabled = 1
+			is_era_valid = { ERA = 7 }
 		}		
 		if = {
 			limit = {
@@ -278,7 +278,7 @@ ds_display_year = {
 						global_var:ds_era_8_start > scope:year
 					}
 				}
-				era_8_enabled = 1
+				is_era_valid = { ERA = 8 }
 			}
 			subtract = era_8_start
 			multiply = -1
@@ -291,7 +291,7 @@ ds_display_year = {
 	else_if = {
 		limit = {
 			scope:year >= era_6_start
-			era_6_enabled = 1
+			is_era_valid = { ERA = 6 }
 		}		
 		if = {
 			limit = {
@@ -303,7 +303,7 @@ ds_display_year = {
 						global_var:ds_era_7_start > scope:year
 					}
 				}
-				era_7_enabled = 1
+				is_era_valid = { ERA = 7 }
 			}
 			subtract = era_7_start
 			multiply = -1
@@ -316,7 +316,7 @@ ds_display_year = {
 	else_if = {
 		limit = {
 			scope:year >= era_5_start
-			era_5_enabled = 1
+			is_era_valid = { ERA = 5 }
 		}		
 		if = {
 			limit = {
@@ -328,7 +328,7 @@ ds_display_year = {
 						global_var:ds_era_6_start > scope:year
 					}
 				}
-				era_6_enabled = 1
+				is_era_valid = { ERA = 6 }
 			}
 			subtract = era_6_start
 			multiply = -1
@@ -341,7 +341,7 @@ ds_display_year = {
 	else_if = {
 		limit = {
 			scope:year >= era_4_start
-			era_4_enabled = 1
+			is_era_valid = { ERA = 4 }
 		}		
 		if = {
 			limit = {
@@ -353,7 +353,7 @@ ds_display_year = {
 						global_var:ds_era_5_start > scope:year
 					}
 				}
-				era_5_enabled = 1
+				is_era_valid = { ERA = 5 }
 			}
 			subtract = era_5_start
 			multiply = -1
@@ -366,7 +366,7 @@ ds_display_year = {
 	else_if = {
 		limit = {
 			scope:year >= era_3_start
-			era_3_enabled = 1
+			is_era_valid = { ERA = 3 }
 		}
 		
 		if = {
@@ -379,7 +379,7 @@ ds_display_year = {
 						global_var:ds_era_4_start > scope:year
 					}
 				}
-				era_4_enabled = 1
+				is_era_valid = { ERA = 4 }
 			}
 			subtract = era_4_start
 			multiply = -1
@@ -392,7 +392,7 @@ ds_display_year = {
 	else_if = {
 		limit = {
 			scope:year >= era_2_start
-			era_2_enabled = 1
+			is_era_valid = { ERA = 2 }
 		}
 		
 		if = {
@@ -405,7 +405,7 @@ ds_display_year = {
 						global_var:ds_era_3_start > scope:year
 					}
 				}
-				era_3_enabled = 1
+				is_era_valid = { ERA = 3 }
 			}
 			subtract = era_3_start
 			multiply = -1
@@ -431,7 +431,7 @@ ds_display_year = {
 						global_var:ds_era_2_start > scope:year
 					}
 				}
-				era_2_enabled = 1
+				is_era_valid = { ERA = 2 }
 			}
 			subtract = era_2_start
 			multiply = -1
@@ -445,14 +445,14 @@ ds_display_era_num = {
 		limit = { exists = scope:year }
 		
 		if = { limit = { scope:year >= era_1_start } add = 1 }
-		if = { limit = { scope:year >= era_2_start era_2_enabled = 1 } add = 1 }
-		if = { limit = { scope:year >= era_3_start era_3_enabled = 1 } add = 1 }
-		if = { limit = { scope:year >= era_4_start era_4_enabled = 1 } add = 1 }
-		if = { limit = { scope:year >= era_5_start era_5_enabled = 1 } add = 1 }
-		if = { limit = { scope:year >= era_6_start era_6_enabled = 1 } add = 1 }
-		if = { limit = { scope:year >= era_7_start era_7_enabled = 1 } add = 1 }
-		if = { limit = { scope:year >= era_8_start era_8_enabled = 1 } add = 1 }
-		if = { limit = { scope:year >= era_9_start era_9_enabled = 1 } add = 1 }
-		if = { limit = { scope:year >= era_10_start era_10_enabled = 1 } add = 1 }
+		if = { limit = { scope:year >= era_2_start is_era_valid = { ERA = 2 } } add = 1 }
+		if = { limit = { scope:year >= era_3_start is_era_valid = { ERA = 3 } } add = 1 }
+		if = { limit = { scope:year >= era_4_start is_era_valid = { ERA = 4 } } add = 1 }
+		if = { limit = { scope:year >= era_5_start is_era_valid = { ERA = 5 } } add = 1 }
+		if = { limit = { scope:year >= era_6_start is_era_valid = { ERA = 6 } } add = 1 }
+		if = { limit = { scope:year >= era_7_start is_era_valid = { ERA = 7 } } add = 1 }
+		if = { limit = { scope:year >= era_8_start is_era_valid = { ERA = 8 } } add = 1 }
+		if = { limit = { scope:year >= era_9_start is_era_valid = { ERA = 9 } } add = 1 }
+		if = { limit = { scope:year >= era_10_start is_era_valid = { ERA = 10 } } add = 1 }
 	}
 }

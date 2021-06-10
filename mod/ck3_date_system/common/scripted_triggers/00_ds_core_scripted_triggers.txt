@@ -1,0 +1,58 @@
+﻿##################################################
+
+### Date system - Scripted Triggers | Core Triggers
+
+# is_era_valid								-	Checks if an era is valid
+# 													* Parameter => $ERA$ - Number, Era to check for validity
+
+##################################################
+
+##################################################
+# is_era_valid - Checks if an era is valid
+# Will return false if it, or any of its preceding eras is disabled
+# 					* Parameter => $ERA$ - Number, Era to check for validity
+##################################################
+is_era_valid = {
+	# Save it as a scope
+	save_temporary_scope_value_as = {
+		name = era
+		value = $ERA$
+	}
+	
+	trigger_if = {
+		limit = { scope:era >= 2 }
+		era_2_enabled = 1
+	}
+	trigger_if = {
+		limit = { scope:era >= 3 }
+		era_3_enabled = 1
+	}
+	trigger_if = {
+		limit = { scope:era >= 4 }
+		era_4_enabled = 1
+	}
+	trigger_if = {
+		limit = { scope:era >= 5 }
+		era_5_enabled = 1
+	}
+	trigger_if = {
+		limit = { scope:era >= 6 }
+		era_6_enabled = 1
+	}
+	trigger_if = {
+		limit = { scope:era >= 7 }
+		era_7_enabled = 1
+	}
+	trigger_if = {
+		limit = { scope:era >= 8 }
+		era_8_enabled = 1
+	}
+	trigger_if = {
+		limit = { scope:era >= 9 }
+		era_9_enabled = 1
+	}
+	trigger_if = {
+		limit = { scope:era >= 10 }
+		era_10_enabled = 1
+	}
+}
