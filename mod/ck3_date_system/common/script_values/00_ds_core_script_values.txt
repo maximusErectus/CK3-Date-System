@@ -1,4 +1,4 @@
-## Back-end modifications
+﻿## Back-end modifications
 era_1_start = { value = 0 }
 era_1_end = { value = era_1_start add = era_1_duration }
 
@@ -445,14 +445,14 @@ ds_display_era_num = {
 		limit = { exists = scope:year }
 		
 		if = { limit = { scope:year >= era_1_start } add = 1 }
-		if = { limit = { scope:year >= era_2_start } add = 1 }
-		if = { limit = { scope:year >= era_3_start } add = 1 }
-		if = { limit = { scope:year >= era_4_start } add = 1 }
-		if = { limit = { scope:year >= era_5_start } add = 1 }
-		if = { limit = { scope:year >= era_6_start } add = 1 }
-		if = { limit = { scope:year >= era_7_start } add = 1 }
-		if = { limit = { scope:year >= era_8_start } add = 1 }
-		if = { limit = { scope:year >= era_9_start } add = 1 }
-		if = { limit = { scope:year >= era_10_start } add = 1 }
+		if = { limit = { scope:year >= era_2_start era_2_enabled = 1 } add = 1 }
+		if = { limit = { scope:year >= era_3_start era_3_enabled = 1 } add = 1 }
+		if = { limit = { scope:year >= era_4_start era_4_enabled = 1 } add = 1 }
+		if = { limit = { scope:year >= era_5_start era_5_enabled = 1 } add = 1 }
+		if = { limit = { scope:year >= era_6_start era_6_enabled = 1 } add = 1 }
+		if = { limit = { scope:year >= era_7_start era_7_enabled = 1 } add = 1 }
+		if = { limit = { scope:year >= era_8_start era_8_enabled = 1 } add = 1 }
+		if = { limit = { scope:year >= era_9_start era_9_enabled = 1 } add = 1 }
+		if = { limit = { scope:year >= era_10_start era_10_enabled = 1 } add = 1 }
 	}
 }
