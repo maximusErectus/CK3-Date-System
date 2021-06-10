@@ -24,7 +24,7 @@ era_2_start = {
 			add = era_1_start
 		}
 		else = {
-			value = 100000
+			value = 100002
 		}
 	}
 	else = {
@@ -55,7 +55,7 @@ era_3_start = {
 			add = era_2_start
 		}
 		else = {
-			value = 100001
+			value = 100003
 		}
 	}
 	else = {
@@ -86,7 +86,7 @@ era_4_start = {
 			add = era_3_start
 		}
 		else = {
-			value = 100001
+			value = 100004
 		}
 	}
 	else = {
@@ -117,7 +117,7 @@ era_5_start = {
 			add = era_4_start
 		}
 		else = {
-			value = 100001
+			value = 100005
 		}
 	}
 	else = {
@@ -148,7 +148,7 @@ era_6_start = {
 			add = era_5_start
 		}
 		else = {
-			value = 100001
+			value = 100006
 		}
 	}
 	else = {
@@ -179,7 +179,7 @@ era_7_start = {
 			add = era_6_start
 		}
 		else = {
-			value = 100001
+			value = 100007
 		}
 	}
 	else = {
@@ -210,7 +210,7 @@ era_8_start = {
 			add = era_7_start
 		}
 		else = {
-			value = 100001
+			value = 100008
 		}
 	}
 	else = {
@@ -241,7 +241,7 @@ era_9_start = {
 			add = era_8_start
 		}
 		else = {
-			value = 100001
+			value = 100009
 		}
 	}
 	else = {
@@ -272,7 +272,7 @@ era_10_start = {
 			add = era_9_start
 		}
 		else = {
-			value = 100001
+			value = 100010
 		}
 	}
 	else = {
