@@ -1,0 +1,8 @@
+﻿ds_display_year_effect_loc = {
+	first_past = DS_LOC_DISPLAY_YEAR
+	third_past = DS_LOC_DISPLAY_YEAR
+	global_past = DS_LOC_DISPLAY_YEAR
+	first = DS_LOC_DISPLAY_YEAR
+	third = DS_LOC_DISPLAY_YEAR
+	global = DS_LOC_DISPLAY_YEAR
+}

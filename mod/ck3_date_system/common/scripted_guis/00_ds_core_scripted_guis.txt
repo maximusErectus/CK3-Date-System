@@ -1,0 +1,26 @@
+﻿get_display_year = {
+	scope = empty
+	
+	saved_scopes = {
+		year
+	}
+	
+	effect = {
+		custom_description_no_bullet = {
+			text = ds_display_year_effect_loc
+			value = dummy_male.ds_display_year
+		}
+	}
+}
+
+get_display_era = {
+	scope = empty	
+	
+	saved_scopes = {
+		year
+	}
+	
+	effect = {
+
+	}
+}
