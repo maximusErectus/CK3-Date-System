@@ -1,6 +1,6 @@
 ## Configurable
 # Global variables should be called ds_era_<1|2|3|etc..>_start
-# Global variables should contain the absolute year
+# Global variables should contain the relative year based on the previous eras start
 # Countdown will be ignored if the next era is started by a global variable or is disabled
 # Duration will be ignored if the next era is started by a global variable or is disabled
 
