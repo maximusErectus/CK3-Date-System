@@ -1,10 +1,22 @@
-﻿get_display_year = {
+﻿##################################################
+
+### Date system - Scripted GUIs | Core sGUIs
+
+# get_display_year	- Fetches the year to display
+# get_display_era	- Fetches the era to display
+
+##################################################
+
+##################################################
+# get_display_year - Fetches the year to display
+##################################################
+get_display_year = {
 	scope = empty
-	
+
 	saved_scopes = {
 		year
 	}
-	
+
 	effect = {
 		custom_description_no_bullet = {
 			text = ds_display_year_effect_loc
@@ -13,17 +25,20 @@
 	}
 }
 
+##################################################
+# get_display_era - Fetches the era to display
+##################################################
 get_display_era = {
 	scope = empty
-	
+
 	saved_scopes = {
 		year
 	}
-	
+
 	effect = {
 		switch = {
 			trigger = dummy_male.ds_display_era_num
-			
+
 			1 = { custom_description_no_bullet = { text = ds_display_era_1_effect_loc } }
 			2 = { custom_description_no_bullet = { text = ds_display_era_2_effect_loc } }
 			3 = { custom_description_no_bullet = { text = ds_display_era_3_effect_loc } }
@@ -34,7 +49,7 @@ get_display_era = {
 			8 = { custom_description_no_bullet = { text = ds_display_era_8_effect_loc } }
 			9 = { custom_description_no_bullet = { text = ds_display_era_9_effect_loc } }
 			10 = { custom_description_no_bullet = { text = ds_display_era_10_effect_loc } }
-			
+
 			fallback = { custom_description_no_bullet = { text = ds_display_era_fallback_effect_loc } }
 		}
 	}

@@ -1,4 +1,16 @@
-﻿## Back-end modifications
+﻿##################################################
+
+### Date system - Script Values | Core Back-end Values
+
+# Back-end modifications 				- Sets up all variables to be used in the Back-end Core
+# Back-end Core | display_year 			- Gets the year to display
+# Back-end Core | ds_display_era_num 	- Gets the era number
+
+##################################################
+
+##################################################
+# Back-end modifications - Sets up all variables to be used in the Back-end Core
+##################################################
 era_1_start = { value = 0 }
 era_1_end = {
 	value = era_1_start
@@ -290,7 +302,9 @@ era_10_end = {
 	}
 }
 
-## Back-end core
+##################################################
+# Back-end Core | display_year - Gets the year to display
+##################################################
 ds_display_year = {
 	value = scope:year
 
@@ -299,7 +313,7 @@ ds_display_year = {
 		limit = {
 			scope:year >= era_10_start
 			is_era_valid = { ERA = 10 }
-		}	
+		}
 		subtract = era_10_start
 	}
 	# Ninth era
@@ -307,7 +321,8 @@ ds_display_year = {
 		limit = {
 			scope:year >= era_9_start
 			is_era_valid = { ERA = 9 }
-		}		
+		}
+
 		if = {
 			limit = {
 				era_9_countdown = 1
@@ -332,7 +347,8 @@ ds_display_year = {
 		limit = {
 			scope:year >= era_8_start
 			is_era_valid = { ERA = 8 }
-		}		
+		}
+
 		if = {
 			limit = {
 				era_8_countdown = 1
@@ -357,7 +373,8 @@ ds_display_year = {
 		limit = {
 			scope:year >= era_7_start
 			is_era_valid = { ERA = 7 }
-		}		
+		}
+
 		if = {
 			limit = {
 				era_7_countdown = 1
@@ -382,7 +399,8 @@ ds_display_year = {
 		limit = {
 			scope:year >= era_6_start
 			is_era_valid = { ERA = 6 }
-		}		
+		}
+
 		if = {
 			limit = {
 				era_6_countdown = 1
@@ -407,7 +425,8 @@ ds_display_year = {
 		limit = {
 			scope:year >= era_5_start
 			is_era_valid = { ERA = 5 }
-		}		
+		}
+
 		if = {
 			limit = {
 				era_5_countdown = 1
@@ -432,7 +451,8 @@ ds_display_year = {
 		limit = {
 			scope:year >= era_4_start
 			is_era_valid = { ERA = 4 }
-		}		
+		}
+
 		if = {
 			limit = {
 				era_4_countdown = 1
@@ -458,7 +478,7 @@ ds_display_year = {
 			scope:year >= era_3_start
 			is_era_valid = { ERA = 3 }
 		}
-		
+
 		if = {
 			limit = {
 				era_3_countdown = 1
@@ -474,7 +494,7 @@ ds_display_year = {
 			subtract = era_4_start
 			multiply = -1
 		}
-		else = {		
+		else = {
 			subtract = era_3_start
 		}
 	}
@@ -484,7 +504,7 @@ ds_display_year = {
 			scope:year >= era_2_start
 			is_era_valid = { ERA = 2 }
 		}
-		
+
 		if = {
 			limit = {
 				era_2_countdown = 1
@@ -510,7 +530,7 @@ ds_display_year = {
 			scope:year >= era_1_start
 		}
 		subtract = era_1_start
-		
+
 		if = {
 			limit = {
 				era_1_countdown = 1
@@ -528,12 +548,14 @@ ds_display_year = {
 		}
 	}
 }
-
+##################################################
+# Back-end Core | ds_display_era_num - Gets the era number
+##################################################
 ds_display_era_num = {
 	value = 0
 	if = {
 		limit = { exists = scope:year }
-		
+
 		if = { limit = { scope:year >= era_1_start } add = 1 }
 		if = { limit = { scope:year >= era_2_start is_era_valid = { ERA = 2 } } add = 1 }
 		if = { limit = { scope:year >= era_3_start is_era_valid = { ERA = 3 } } add = 1 }

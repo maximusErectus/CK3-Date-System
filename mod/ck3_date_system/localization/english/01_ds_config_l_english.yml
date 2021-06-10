@@ -1,7 +1,9 @@
 ﻿l_english:
-#TODO: Formatting
- #
+
+ # Format for year display
  DS_LOC_DISPLAY_YEAR: "$VALUE|0$"
+ 
+ # Text to show for each respective era
  DS_LOC_DISPLAY_ERA_01: "E1"
  DS_LOC_DISPLAY_ERA_02: "E2"
  DS_LOC_DISPLAY_ERA_03: "E3"
@@ -12,4 +14,4 @@
  DS_LOC_DISPLAY_ERA_08: "E8"
  DS_LOC_DISPLAY_ERA_09: "E9"
  DS_LOC_DISPLAY_ERA_10: "E10"
- DS_LOC_DISPLAY_ERA_FALLBACK: "FB"
+ DS_LOC_DISPLAY_ERA_FALLBACK: "FB" # Shows if somehow everything went tits up
