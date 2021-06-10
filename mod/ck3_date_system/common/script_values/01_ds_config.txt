@@ -50,7 +50,7 @@ era_8_enabled = 1
 era_9_duration = 11
 era_9_countdown = 1
 era_9_started_by_variable = 0
-era_9_enabled = 1
+era_9_enabled = 0
 
 era_10_duration = 0
 era_10_countdown = 0
