@@ -1,0 +1,83 @@
+﻿##################################################
+
+### Date system - Script Values | Configuration
+
+# This file is used to configure the Date system.
+# Make sure to also check the 'localization/english/01_ds_config_l_english.yml' to configure custom text.
+#
+# Below you'll find some short documentation describing what each options does, and what is possible.
+# At the bottom the configurable values can be found.
+#
+#
+# era_<x>_duration			<n years> 					| Determines how long the era will last. *1
+# era_<x>_countdown			<1: Count-down, 0:Count-up>	| Determines whether the era will count up ( 0 AD, 1 AD, 2 AD ), or count down ( 3 BCE, 2 BCE, 1 BCE ) *2
+# era_<x>_started_by_variable	<1: Yes, 0: No>			| Determines whether the era will be started by a global variable *3
+# era_<x>_enabled				<1: Yes, 0: No>			| Determines whether the era is enabled *4
+#
+#######
+# *1
+# + Duration will be ignored if the next era is disabled, or is started by a global variable
+# + Negative durations will automatically be multiplied by -1
+#######
+# *2
+# + Countdown will be ignored if the next era is disabled, or is started by a global variable that is not yet set
+#######
+# *3
+# + Global variables should be named "ds_era_<2|3|4|etc..>_start"
+# + Global variables should contain the amount of years relative to the previous era's start
+#######
+# *4
+# + If an era is enabled, but any previous era is not, the era will be ignored
+#######
+##################################################
+
+##################################################
+# Era configuration
+##################################################
+era_1_duration = 1075
+era_1_countdown = 1
+
+era_2_duration = 10
+era_2_countdown = 0
+era_2_started_by_variable = 0
+era_2_enabled = 1
+
+era_3_duration = 15
+era_3_countdown = 1
+era_3_started_by_variable = 0
+era_3_enabled = 1
+
+era_4_duration = 13
+era_4_countdown = 0
+era_4_started_by_variable = 0
+era_4_enabled = 1
+
+era_5_duration = 18
+era_5_countdown = 1
+era_5_started_by_variable = 0
+era_5_enabled = 1
+
+era_6_duration = 12
+era_6_countdown = 0
+era_6_started_by_variable = 0
+era_6_enabled = 1
+
+era_7_duration = 9
+era_7_countdown = 1
+era_7_started_by_variable = 0
+era_7_enabled = 1
+
+era_8_duration = 14
+era_8_countdown = 0
+era_8_started_by_variable = 0
+era_8_enabled = 1
+
+era_9_duration = 11
+era_9_countdown = 1
+era_9_started_by_variable = 0
+era_9_enabled = 1
+
+era_10_duration = 0
+era_10_countdown = 0
+era_10_started_by_variable = 0
+era_10_enabled = 1

@@ -1,38 +1,18 @@
 ﻿l_english:
 
- DS_DATE_INSERT_YEAR_STR: "[GetScriptedGui('get_display_year').ExecuteTooltip( GuiScope.AddScope('year', MakeScopeValue('(CFixedPoint)$YEAR$') ).End )]"
- DS_DATE_INSERT_ERA_STR: "W.I.P"
-
  ### DATE_STRING replacements
- GAME_DATE_STRING: "$MONTH$ $DAY|O$, ; $DS_DATE_INSERT_YEAR_STR$ ; $DS_DATE_INSERT_ERA_STR$ ; $YEAR$"
- GAME_DATE_STRING_SHORT: "$MONTH_SHORT$ $DAY|O$, ; $DS_DATE_INSERT_YEAR_STR$ ; $DS_DATE_INSERT_ERA_STR$ ; $YEAR$"
+ GAME_DATE_STRING: "$MONTH$ $DAY|O$, $DS_DATE_INSERT_YEAR_STR$ $DS_DATE_INSERT_ERA_STR$"
+ GAME_DATE_STRING_SHORT: "$MONTH_SHORT$ $DAY|O$, $DS_DATE_INSERT_YEAR_STR$ $DS_DATE_INSERT_ERA_STR$"
  GAME_DATE_STRING_SHORT_NO_YEAR: "$MONTH$ $DAY|O$"
- GAME_DATE_STRING_LONG: "$DAY|O$ of $MONTH$, ; $DS_DATE_INSERT_YEAR_STR$ ; $DS_DATE_INSERT_ERA_STR$ ; $YEAR$"
- 
- 
- #
- DS_LOC_DISPLAY_YEAR: "$VALUE|0$"
- 
- 
+ GAME_DATE_STRING_LONG: "$DAY|O$ of $MONTH$, $DS_DATE_INSERT_YEAR_STR$ $DS_DATE_INSERT_ERA_STR$"
+
  ### Text replacements in main menu
  ## Vanilla
  #FRONTEND_CONTINUE_TT: "#T Continue From Save Game\n#!"[SaveGameItem.GetName]"\n[SaveGameItem.GetPlayerName|V]\n[SaveGameItem.GetTitleName|VU]\n[SaveGameItem.GetDate.GetString|V]\n[Select_CString(SaveGameItem.IsCloudSave, 'Cloud Save', '' )]"
  #LOAD_SAVE_ITEM_DATE: "Date: [SaveGameItem.GetDate.GetString]"
  #PICK_ANY_CHARACTER: "Play as any Ruler in #light_background;bold[GameSetup.GetSelectedBookmark.GetDate.GetYear]#!, or #bold create your own!#!"
- 
+
  ## Modified
  FRONTEND_CONTINUE_TT: "#T Continue From Save Game\n#!"[SaveGameItem.GetName]"\n[SaveGameItem.GetPlayerName|V]\n[SaveGameItem.GetTitleName|VU]\nSaveGameItem.GetDate.GetString|V\n[Select_CString(SaveGameItem.IsCloudSave, 'Cloud Save', '' )]"
  LOAD_SAVE_ITEM_DATE: "Date: SaveGameItem.GetDate.GetString"
  PICK_ANY_CHARACTER: "Play as any Ruler in #light_background;bold [GameSetup.GetSelectedBookmark.GetDate.GetYear] #!, or #bold create your own!#!"
- 
- ### Replacements in GUI files 
- ## gui/frontend_bookmarks.gui
- # Default: [GameSetup.GetSelectedDate.GetStringLong]
- frontend_bookmarks_date_replace:0 "frontend_bookmarks_date_replace" 
- # Default: [BookmarkItem.GetYear]
- frontend_bookmarks_bmI_date_replace:0 "frontend_bookmarks_bmI_date_replace"
- ## gui/frontend_mp_game_setup.gui
- # Default: [MpBookmarkItem.GetDate.GetStringLong]
- frontend_mp_game_setup_date_replace:0 "frontend_mp_game_setup_date_replace"
- # Default: [GameMpSetup.GetSelectedBookmark.GetDate.GetString]
- frontend_mp_game_setup_bookmark_date_replace:0 "frontend_mp_game_setup_bookmark_date_replace"

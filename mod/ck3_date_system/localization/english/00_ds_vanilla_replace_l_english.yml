@@ -1,0 +1,10 @@
+﻿l_english:
+
+ ### Replacements in GUI files  
+ ## file: gui/frontend_bookmarks.gui
+ frontend_bookmarks_date_replace:0 "GameSetup.GetSelectedDate.GetStringLong"  # Vanilla: [GameSetup.GetSelectedDate.GetStringLong]
+ frontend_bookmarks_bmI_date_replace:0 "BookmarkItem.GetYear" # Vanilla: [BookmarkItem.GetYear]
+ 
+ ## file: gui/frontend_mp_game_setup.gui
+ frontend_mp_game_setup_date_replace:0 "MpBookmarkItem.GetDate.GetStringLong" # Vanilla: [MpBookmarkItem.GetDate.GetStringLong]
+ frontend_mp_game_setup_bookmark_date_replace:0 "GameMpSetup.GetSelectedBookmark.GetDate.GetString" # Vanilla: [GameMpSetup.GetSelectedBookmark.GetDate.GetString]
