@@ -1,204 +1,430 @@
-﻿## Configurable
-# Global variables should be called ds_<second|third|fourth|etc..>_era_start
-# Global variables should contain the absolute year
-# Countdown will be ignored if the next era is started by a global variable or is disabled
-# Duration will be ignored if the next era is started by a global variable or is disabled
+﻿## Back-end modifications
+era_1_start = { value = 0 }
+era_1_end = { value = era_1_start add = era_1_duration }
 
-# Countdown will be ignored if the next era is disabled, or is started by a global variable that is not yet set
-# Duration will be ignored if the next era is disabled, or is started by a global variable
-
-# Having an enabled era preceded by a disabled era will cause issues
-
-first_era_duration = 1075
-first_era_countdown = 1
-
-second_era_duration = 10
-second_era_countdown = 0
-second_era_started_by_variable = 0
-second_era_enabled = 1
-
-third_era_duration = 10
-third_era_countdown = 1
-third_era_started_by_variable = 1
-third_era_enabled = 1
-
-fourth_era_duration = 10
-fourth_era_countdown = 0
-fourth_era_started_by_variable = 0
-fourth_era_enabled = 1
-
-
-## Back-end modifications
-first_era_start = { value = 0 }
-first_era_end = { 
-	value = first_era_start
-	add = first_era_duration
-}
-
-second_era_start = {
+era_2_start = {
 	if = {
 		limit = {
-			second_era_started_by_variable = 1
+			era_2_started_by_variable = 1
 		}
 		if = {
 			limit = {
-				exists = global_var:ds_second_era_start
+				exists = global_var:ds_era_2_start
 			}
-			value = global_var:ds_second_era_start
+			value = global_var:ds_era_2_start
 		}
 		else = {
 			value = 100000
 		}
 	}
 	else = {
-		value = first_era_end
+		value = era_1_end
 	}
 }
-second_era_end = { value = second_era_start add = second_era_duration }
+era_2_end = { value = era_2_start add = era_2_duration }
 
-third_era_start = {
+era_3_start = {
 	if = {
 		limit = {
-			third_era_started_by_variable = 1
+			era_3_started_by_variable = 1
 		}
 		if = {
 			limit = {
-				exists = global_var:ds_third_era_start
+				exists = global_var:ds_era_3_start
 			}
-			value = global_var:ds_third_era_start
+			value = global_var:ds_era_3_start
 		}
 		else = {
 			value = 100001
 		}
 	}
 	else = {
-		value = second_era_end
+		value = era_2_end
 	}
 }
-third_era_end = { value = third_era_start add = third_era_duration }
+era_3_end = { value = era_3_start add = era_3_duration }
 
-fourth_era_start = {
+era_4_start = {
 	if = {
 		limit = {
-			fourth_era_started_by_variable = 1
+			era_4_started_by_variable = 1
 		}
 		if = {
 			limit = {
-				exists = global_var:ds_fourth_era_start
+				exists = global_var:ds_era_4_start
 			}
-			value = global_var:ds_fourth_era_start
+			value = global_var:ds_era_4_start
 		}
 		else = {
 			value = 100001
 		}
 	}
 	else = {
-		value = third_era_end
+		value = era_3_end
 	}
 }
-fourth_era_end = { value = fourth_era_start add = fourth_era_duration }
+era_4_end = { value = era_4_start add = era_4_duration }
+
+era_5_start = {
+	if = {
+		limit = {
+			era_5_started_by_variable = 1
+		}
+		if = {
+			limit = {
+				exists = global_var:ds_era_5_start
+			}
+			value = global_var:ds_era_5_start
+		}
+		else = {
+			value = 100001
+		}
+	}
+	else = {
+		value = era_4_end
+	}
+}
+era_5_end = { value = era_5_start add = era_5_duration }
+
+era_6_start = {
+	if = {
+		limit = {
+			era_6_started_by_variable = 1
+		}
+		if = {
+			limit = {
+				exists = global_var:ds_era_6_start
+			}
+			value = global_var:ds_era_6_start
+		}
+		else = {
+			value = 100001
+		}
+	}
+	else = {
+		value = era_5_end
+	}
+}
+era_6_end = { value = era_6_start add = era_6_duration }
+
+era_7_start = {
+	if = {
+		limit = {
+			era_7_started_by_variable = 1
+		}
+		if = {
+			limit = {
+				exists = global_var:ds_era_7_start
+			}
+			value = global_var:ds_era_7_start
+		}
+		else = {
+			value = 100001
+		}
+	}
+	else = {
+		value = era_6_end
+	}
+}
+era_7_end = { value = era_7_start add = era_7_duration }
+
+era_8_start = {
+	if = {
+		limit = {
+			era_8_started_by_variable = 1
+		}
+		if = {
+			limit = {
+				exists = global_var:ds_era_8_start
+			}
+			value = global_var:ds_era_8_start
+		}
+		else = {
+			value = 100001
+		}
+	}
+	else = {
+		value = era_7_end
+	}
+}
+era_8_end = { value = era_8_start add = era_8_duration }
+
+era_9_start = {
+	if = {
+		limit = {
+			era_9_started_by_variable = 1
+		}
+		if = {
+			limit = {
+				exists = global_var:ds_era_9_start
+			}
+			value = global_var:ds_era_9_start
+		}
+		else = {
+			value = 100001
+		}
+	}
+	else = {
+		value = era_8_end
+	}
+}
+era_9_end = { value = era_9_start add = era_9_duration }
+
+era_10_start = {
+	if = {
+		limit = {
+			era_10_started_by_variable = 1
+		}
+		if = {
+			limit = {
+				exists = global_var:ds_era_10_start
+			}
+			value = global_var:ds_era_10_start
+		}
+		else = {
+			value = 100001
+		}
+	}
+	else = {
+		value = era_9_end
+	}
+}
+era_10_end = { value = era_10_start add = era_10_duration }
 
 ## Back-end core
 ds_display_year = {
 	value = scope:year
-	
-	# Fourth era
+
+	# Tenth era
 	if = {
 		limit = {
-			scope:year >= fourth_era_start
-			fourth_era_enabled = 1
+			scope:year >= era_10_start
+			era_10_enabled = 1
+		}	
+		subtract = era_10_start
+	}
+	# Ninth era
+	else_if = {
+		limit = {
+			scope:year >= era_9_start
+			era_9_enabled = 1
 		}		
-		#if = {
-		#	limit = {
-		#		fourth_era_countdown = 1
-		#		OR = {
-		#			fifth_era_started_by_variable = 0
-		#			AND = {
-		#				exists = global_var:ds_fifth_era_start
-		#				global_var:ds_fifth_era_start > scope:year
-		#			}
-		#		}
-		#		fifth_era_enabled = 1
-		#	}
-		#	subtract = fifth_era_start
-		#	multiply = -1
-		#}
-		#else = {
-			subtract = fourth_era_start
-		#}
+		if = {
+			limit = {
+				era_9_countdown = 1
+				OR = {
+					era_10_started_by_variable = 0
+					AND = {
+						exists = global_var:ds_era_10_start
+						global_var:ds_era_10_start > scope:year
+					}
+				}
+				era_10_enabled = 1
+			}
+			subtract = era_10_start
+			multiply = -1
+		}
+		else = {
+			subtract = era_9_start
+		}
+	}
+	# Eigthh era
+	else_if = {
+		limit = {
+			scope:year >= era_8_start
+			era_8_enabled = 1
+		}		
+		if = {
+			limit = {
+				era_8_countdown = 1
+				OR = {
+					era_9_started_by_variable = 0
+					AND = {
+						exists = global_var:ds_era_9_start
+						global_var:ds_era_9_start > scope:year
+					}
+				}
+				era_9_enabled = 1
+			}
+			subtract = era_9_start
+			multiply = -1
+		}
+		else = {
+			subtract = era_8_start
+		}
+	}
+	# Seventh era
+	else_if = {
+		limit = {
+			scope:year >= era_7_start
+			era_7_enabled = 1
+		}		
+		if = {
+			limit = {
+				era_7_countdown = 1
+				OR = {
+					era_8_started_by_variable = 0
+					AND = {
+						exists = global_var:ds_era_8_start
+						global_var:ds_era_8_start > scope:year
+					}
+				}
+				era_8_enabled = 1
+			}
+			subtract = era_8_start
+			multiply = -1
+		}
+		else = {
+			subtract = era_7_start
+		}
+	}
+	# Sixth era
+	else_if = {
+		limit = {
+			scope:year >= era_6_start
+			era_6_enabled = 1
+		}		
+		if = {
+			limit = {
+				era_6_countdown = 1
+				OR = {
+					era_7_started_by_variable = 0
+					AND = {
+						exists = global_var:ds_era_7_start
+						global_var:ds_era_7_start > scope:year
+					}
+				}
+				era_7_enabled = 1
+			}
+			subtract = era_7_start
+			multiply = -1
+		}
+		else = {
+			subtract = era_6_start
+		}
+	}
+	# Fifth era
+	else_if = {
+		limit = {
+			scope:year >= era_5_start
+			era_5_enabled = 1
+		}		
+		if = {
+			limit = {
+				era_5_countdown = 1
+				OR = {
+					era_6_started_by_variable = 0
+					AND = {
+						exists = global_var:ds_era_6_start
+						global_var:ds_era_6_start > scope:year
+					}
+				}
+				era_6_enabled = 1
+			}
+			subtract = era_6_start
+			multiply = -1
+		}
+		else = {
+			subtract = era_5_start
+		}
+	}	
+	# Fourth era
+	else_if = {
+		limit = {
+			scope:year >= era_4_start
+			era_4_enabled = 1
+		}		
+		if = {
+			limit = {
+				era_4_countdown = 1
+				OR = {
+					era_5_started_by_variable = 0
+					AND = {
+						exists = global_var:ds_era_5_start
+						global_var:ds_era_5_start > scope:year
+					}
+				}
+				era_5_enabled = 1
+			}
+			subtract = era_5_start
+			multiply = -1
+		}
+		else = {
+			subtract = era_4_start
+		}
 	}
 	# Third era
 	else_if = {
 		limit = {
-			scope:year >= third_era_start
-			third_era_enabled = 1
+			scope:year >= era_3_start
+			era_3_enabled = 1
 		}
 		
 		if = {
 			limit = {
-				third_era_countdown = 1
+				era_3_countdown = 1
 				OR = {
-					fourth_era_started_by_variable = 0
+					era_4_started_by_variable = 0
 					AND = {
-						exists = global_var:ds_fourth_era_start
-						global_var:ds_fourth_era_start > scope:year
+						exists = global_var:ds_era_4_start
+						global_var:ds_era_4_start > scope:year
 					}
 				}
-				fourth_era_enabled = 1
+				era_4_enabled = 1
 			}
-			subtract = fourth_era_start
+			subtract = era_4_start
 			multiply = -1
 		}
 		else = {		
-			subtract = third_era_start
+			subtract = era_3_start
 		}
 	}
 	# Second era
 	else_if = {
 		limit = {
-			scope:year >= second_era_start
-			second_era_enabled = 1
+			scope:year >= era_2_start
+			era_2_enabled = 1
 		}
 		
 		if = {
 			limit = {
-				second_era_countdown = 1
+				era_2_countdown = 1
 				OR = {
-					third_era_started_by_variable = 0
+					era_3_started_by_variable = 0
 					AND = {
-						exists = global_var:ds_third_era_start
-						global_var:ds_third_era_start > scope:year
+						exists = global_var:ds_era_3_start
+						global_var:ds_era_3_start > scope:year
 					}
 				}
-				third_era_enabled = 1
+				era_3_enabled = 1
 			}
-			subtract = third_era_start
+			subtract = era_3_start
 			multiply = -1
 		}
 		else = {
-			subtract = second_era_start
+			subtract = era_2_start
 		}
 	}
 	# First era
 	else_if = {
 		limit = {
-			scope:year >= first_era_start
+			scope:year >= era_1_start
 		}
-		subtract = first_era_start
+		subtract = era_1_start
 		
 		if = {
 			limit = {
-				first_era_countdown = 1
+				era_1_countdown = 1
 				OR = {
-					second_era_started_by_variable = 0
+					era_2_started_by_variable = 0
 					AND = {
-						exists = global_var:ds_second_era_start
-						global_var:ds_second_era_start > scope:year
+						exists = global_var:ds_era_2_start
+						global_var:ds_era_2_start > scope:year
 					}
 				}
-				second_era_enabled = 1
+				era_2_enabled = 1
 			}
-			subtract = second_era_start
+			subtract = era_2_start
 			multiply = -1
 		}
 	}
@@ -209,9 +435,15 @@ ds_display_era_num = {
 	if = {
 		limit = { exists = scope:year }
 		
-		if = { limit = { scope:year >= first_era_start } add = 1 }
-		if = { limit = { scope:year >= second_era_start } add = 1 }
-		if = { limit = { scope:year >= third_era_start } add = 1 }
-		if = { limit = { scope:year >= fourth_era_start } add = 1 }
+		if = { limit = { scope:year >= era_1_start } add = 1 }
+		if = { limit = { scope:year >= era_2_start } add = 1 }
+		if = { limit = { scope:year >= era_3_start } add = 1 }
+		if = { limit = { scope:year >= era_4_start } add = 1 }
+		if = { limit = { scope:year >= era_5_start } add = 1 }
+		if = { limit = { scope:year >= era_6_start } add = 1 }
+		if = { limit = { scope:year >= era_7_start } add = 1 }
+		if = { limit = { scope:year >= era_8_start } add = 1 }
+		if = { limit = { scope:year >= era_9_start } add = 1 }
+		if = { limit = { scope:year >= era_10_start } add = 1 }
 	}
 }
