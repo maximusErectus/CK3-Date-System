@@ -17,42 +17,42 @@ era_2_countdown = 0
 era_2_started_by_variable = 0
 era_2_enabled = 1
 
-era_3_duration = 10
+era_3_duration = 15
 era_3_countdown = 1
 era_3_started_by_variable = 1
 era_3_enabled = 1
 
-era_4_duration = 10
+era_4_duration = 13
 era_4_countdown = 0
 era_4_started_by_variable = 0
 era_4_enabled = 1
 
-era_5_duration = 10
+era_5_duration = 18
 era_5_countdown = 0
 era_5_started_by_variable = 0
 era_5_enabled = 1
 
-era_6_duration = 10
-era_6_countdown = 0
+era_6_duration = 12
+era_6_countdown = 1
 era_6_started_by_variable = 0
 era_6_enabled = 1
 
-era_7_duration = 10
+era_7_duration = 9
 era_7_countdown = 0
 era_7_started_by_variable = 0
 era_7_enabled = 1
 
-era_8_duration = 10
+era_8_duration = 14
 era_8_countdown = 0
 era_8_started_by_variable = 0
 era_8_enabled = 1
 
-era_9_duration = 10
-era_9_countdown = 0
+era_9_duration = 11
+era_9_countdown = 1
 era_9_started_by_variable = 0
 era_9_enabled = 1
 
-era_10_duration = 10
+era_10_duration = 0
 era_10_countdown = 0
 era_10_started_by_variable = 0
 era_10_enabled = 1
