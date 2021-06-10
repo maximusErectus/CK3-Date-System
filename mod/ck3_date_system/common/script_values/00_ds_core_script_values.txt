@@ -1,6 +1,15 @@
 ﻿## Back-end modifications
 era_1_start = { value = 0 }
-era_1_end = { value = era_1_start add = era_1_duration }
+era_1_end = {
+	value = era_1_start
+	add = {
+		value = era_1_duration
+		if = {
+			limit = { era_1_duration < 0 }
+			multiply = -1
+		}
+	}
+}
 
 era_2_start = {
 	if = {
@@ -22,7 +31,16 @@ era_2_start = {
 		value = era_1_end
 	}
 }
-era_2_end = { value = era_2_start add = era_2_duration }
+era_2_end = {
+	value = era_2_start
+	add = {
+		value = era_2_duration
+		if = {
+			limit = { era_2_duration < 0 }
+			multiply = -1
+		}
+	}
+}
 
 era_3_start = {
 	if = {
@@ -44,7 +62,16 @@ era_3_start = {
 		value = era_2_end
 	}
 }
-era_3_end = { value = era_3_start add = era_3_duration }
+era_3_end = {
+	value = era_3_start
+	add = {
+		value = era_3_duration
+		if = {
+			limit = { era_3_duration < 0 }
+			multiply = -1
+		}
+	}
+}
 
 era_4_start = {
 	if = {
@@ -66,7 +93,16 @@ era_4_start = {
 		value = era_3_end
 	}
 }
-era_4_end = { value = era_4_start add = era_4_duration }
+era_4_end = {
+	value = era_4_start
+	add = {
+		value = era_4_duration
+		if = {
+			limit = { era_4_duration < 0 }
+			multiply = -1
+		}
+	}
+}
 
 era_5_start = {
 	if = {
@@ -88,7 +124,16 @@ era_5_start = {
 		value = era_4_end
 	}
 }
-era_5_end = { value = era_5_start add = era_5_duration }
+era_5_end = {
+	value = era_5_start
+	add = {
+		value = era_5_duration
+		if = {
+			limit = { era_5_duration < 0 }
+			multiply = -1
+		}
+	}
+}
 
 era_6_start = {
 	if = {
@@ -110,7 +155,16 @@ era_6_start = {
 		value = era_5_end
 	}
 }
-era_6_end = { value = era_6_start add = era_6_duration }
+era_6_end = {
+	value = era_6_start
+	add = {
+		value = era_6_duration
+		if = {
+			limit = { era_6_duration < 0 }
+			multiply = -1
+		}
+	}
+}
 
 era_7_start = {
 	if = {
@@ -132,7 +186,16 @@ era_7_start = {
 		value = era_6_end
 	}
 }
-era_7_end = { value = era_7_start add = era_7_duration }
+era_7_end = {
+	value = era_7_start
+	add = {
+		value = era_7_duration
+		if = {
+			limit = { era_7_duration < 0 }
+			multiply = -1
+		}
+	}
+}
 
 era_8_start = {
 	if = {
@@ -154,7 +217,16 @@ era_8_start = {
 		value = era_7_end
 	}
 }
-era_8_end = { value = era_8_start add = era_8_duration }
+era_8_end = {
+	value = era_8_start
+	add = {
+		value = era_8_duration
+		if = {
+			limit = { era_8_duration < 0 }
+			multiply = -1
+		}
+	}
+}
 
 era_9_start = {
 	if = {
@@ -176,7 +248,16 @@ era_9_start = {
 		value = era_8_end
 	}
 }
-era_9_end = { value = era_9_start add = era_9_duration }
+era_9_end = {
+	value = era_9_start
+	add = {
+		value = era_9_duration
+		if = {
+			limit = { era_9_duration < 0 }
+			multiply = -1
+		}
+	}
+}
 
 era_10_start = {
 	if = {
@@ -198,7 +279,16 @@ era_10_start = {
 		value = era_9_end
 	}
 }
-era_10_end = { value = era_10_start add = era_10_duration }
+era_10_end = {
+	value = era_10_start
+	add = {
+		value = era_10_duration
+		if = {
+			limit = { era_10_duration < 0 }
+			multiply = -1
+		}
+	}
+}
 
 ## Back-end core
 ds_display_year = {

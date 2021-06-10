@@ -8,6 +8,7 @@
 # Duration will be ignored if the next era is disabled, or is started by a global variable
 
 # Having an enabled era preceded by a disabled era will cause issues
+# Negative durations will automatically be multiplied by -1
 
 era_1_duration = 1075
 era_1_countdown = 1
