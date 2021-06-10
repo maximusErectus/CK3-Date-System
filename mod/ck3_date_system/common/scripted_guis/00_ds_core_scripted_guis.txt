@@ -14,7 +14,7 @@
 }
 
 get_display_era = {
-	scope = empty	
+	scope = empty
 	
 	saved_scopes = {
 		year
